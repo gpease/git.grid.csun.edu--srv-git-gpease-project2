@@ -1,0 +1,11 @@
+# Example Configuration File for deflect:  
+#     deflect:  Daemon for HTTP Egress, Filtering, Load balancing, and Caching Trivially
+#
+# URL-prefix                           Disposition               Host list
+
+http://www.csun.edu/               redirected              130.166.238.195, redwing.csun.edu
+http://facebook.com/                filtered
+http://www.csun.edu/~steve   cached                     www.csun.edu
+
+# Note that any URL that is not covered by any rule is transferred through the system 
+# without any additional processing.
